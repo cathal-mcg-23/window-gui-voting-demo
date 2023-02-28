@@ -1,0 +1,14 @@
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\s20_project.exe
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\s20_project.pdb
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\s20_project.exe.config
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\useruq\source\repos\adventitious\lab_coding\s20_project\ConsoleApp1\bin\Debug\dbOne.mdf
