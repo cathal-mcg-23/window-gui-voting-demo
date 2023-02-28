@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbOneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BallotPaper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Votes" Relationship="Self.FK__Votes__BallotPap__29572725" FromRole="BallotPapers" ToRole="Votes" />
+  </EntityType>
+  <EntityType Name="Candidate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CandidateName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Votes" Relationship="Self.FK__Votes__Candidate__276EDEB3" FromRole="Candidates" ToRole="Votes" />
+  </EntityType>
+  <EntityType Name="Vote">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="BallotPaperId" Type="Int32" Nullable="false" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="VotePreference" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BallotPaper" Relationship="Self.FK__Votes__BallotPap__29572725" FromRole="Votes" ToRole="BallotPapers" />
+    <NavigationProperty Name="Candidate" Relationship="Self.FK__Votes__Candidate__276EDEB3" FromRole="Votes" ToRole="Candidates" />
+  </EntityType>
+  <Association Name="FK__Votes__BallotPap__29572725">
+    <End Role="BallotPapers" Type="Self.BallotPaper" Multiplicity="1" />
+    <End Role="Votes" Type="Self.Vote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BallotPapers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="BallotPaperId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Votes__Candidate__276EDEB3">
+    <End Role="Candidates" Type="Self.Candidate" Multiplicity="1" />
+    <End Role="Votes" Type="Self.Vote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbOneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BallotPapers" EntityType="Self.BallotPaper" />
+    <EntitySet Name="Candidates" EntityType="Self.Candidate" />
+    <EntitySet Name="Votes" EntityType="Self.Vote" />
+    <AssociationSet Name="FK__Votes__BallotPap__29572725" Association="Self.FK__Votes__BallotPap__29572725">
+      <End Role="BallotPapers" EntitySet="BallotPapers" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Votes__Candidate__276EDEB3" Association="Self.FK__Votes__Candidate__276EDEB3">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

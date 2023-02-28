@@ -1,0 +1,21 @@
+﻿<Window x:Class="s20_project.LoadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:s20_project"
+        mc:Ignorable="d"
+        Title="Load" Height="260" Width="400" Background="#ccccee" Loaded="Window_Loaded" >
+
+    <Grid>
+        <Button x:Name="Btn_LoadJson" Content="Load from JSON object"  Height="30"  VerticalAlignment="Top" Margin="12,12,12,0" Click="Btn_LoadJson_Click" FontSize="14" />
+        <Button x:Name="Btn_LoadFromDb" Content="Read from Database"  Height="30"  VerticalAlignment="Bottom" Margin="12,0,12,54" FontSize="14" Click="Btn_LoadFromDb_Click" />
+
+        <Label Content="Database Connection String" Margin="12,0,0,118" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Bottom" Height="36"/>
+        <TextBox x:Name="Txb_ConnectionString" Height="26" Margin="12,0,12,92"    FontSize="16" VerticalAlignment="Bottom"/>
+ 
+        <Button x:Name="Btn_Close"   IsCancel="true"  Content="Close" HorizontalAlignment="Right" Margin="0,00,12,12" VerticalAlignment="Bottom" Width="75" Height="30" Click="Btn_Close_Click"   />
+
+    </Grid>
+
+</Window>

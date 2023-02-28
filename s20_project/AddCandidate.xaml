@@ -1,0 +1,17 @@
+﻿<Window x:Class="s20_project.AddCandidate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:s20_project"
+        mc:Ignorable="d"
+        Title="Window1" Height="170" Width="260" Background="#ccccee" Loaded="Window_Loaded">
+
+    <Grid>
+        <Label Content="Enter the candidate's name" Margin="12,10,12,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+        <TextBox x:Name="AddName" Height="26" Margin="12,45,12,0"  KeyDown="OnKeyDownHandler"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="Btn_Cancel"  IsCancel="true" Content="Close" HorizontalAlignment="Right" Margin="0,00,12,12" VerticalAlignment="Bottom" Width="75" Height="30" Click="Btn_Cancel_Click"/>
+        <Button x:Name="AddOkay" Content="Add"   HorizontalAlignment="Right" Margin="0,0,99,12" VerticalAlignment="Bottom" Width="75" Height="30" Click="Btn_AddOkay"/>
+
+    </Grid>
+</Window>
